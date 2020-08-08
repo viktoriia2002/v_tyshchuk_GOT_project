@@ -9,11 +9,29 @@
     font-style: normal;
 }
 
+.video_controls {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.video-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: 20px;
+}
+
 .fas {
     font-size: 2em;
     color: white;
     cursor: pointer;
 }
+
+.fas:hover {
+    color: #43464B;
+}
+
 
 .house-info {
     color: white;
@@ -24,11 +42,6 @@
     margin-top: 1em;
 }
 
-
-/* ----- end custom font ----- */
-
-
-/* ----- default styles ----- */
 
 body {
     background-image: url(../images/grungeBG.jpg);
@@ -58,12 +71,13 @@ main {
     background-color: grey;
     margin: 0 auto;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 #houseImages {
+
     position: relative;
-    width: 7000px;
-    /*this might need to be bigger*/
+    width: 6000px;
     transition: all .5s;
 }
 
@@ -82,11 +96,6 @@ main {
     cursor: pointer;
 }
 
-
-/* ----- end default styles ----- */
-
-
-/* ----- image sprite ----- */
 
 .sigilContainer {
     width: 51px;
@@ -173,11 +182,6 @@ main {
 }
 
 
-/* ----- end image sprite ----- */
-
-
-/* ----- classes for transitions ----- */
-
 .scaleUp {
     -moz-transform: scale(1.7, 1.7);
     -webkit-transform: scale(1.7, 1.7);
@@ -191,14 +195,13 @@ main {
 }
 
 
-/* add styles here for lightbox and video */
 
 .lightbox {
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: ;
     z-index: 500;
     display: none;
 }
@@ -224,24 +227,4 @@ video {
 
 .show-lightbox {
     display: block;
-}
-
-
-/* controls */
-
-.controls {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
-
-.buttons {
-    display: flex;
-    justify-content: space-between;
-    width: 300px;
-    margin: 20px;
-}
-
-.fas:hover {
-    color: #949393;
 }
