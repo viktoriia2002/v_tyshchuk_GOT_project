@@ -18,18 +18,22 @@
 .video-buttons {
     display: flex;
     justify-content: space-between;
-    width: 300px;
-    margin: 20px;
+    width: 400px;
+    margin-top: 30px;
 }
 
 .fas {
-    font-size: 2em;
-    color: white;
+    font-size: 2.3em;
+    color: #fff;
     cursor: pointer;
+    transition: all .2s ease-in-out;
+
 }
+
 
 .fas:hover {
     color: #43464B;
+      transform: scale(1.3);
 }
 
 
@@ -201,7 +205,6 @@ main {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: ;
     z-index: 500;
     display: none;
 }
@@ -212,12 +215,13 @@ main {
     cursor: pointer;
     font-size: 3em;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     opacity: 0.6;
+    transition: all .2s ease-in-out;
 }
 
 .close-lb:hover {
     opacity: 1;
+      transform: scale(1.1);
 }
 
 video {

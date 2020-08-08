@@ -53,32 +53,19 @@
         lbVideo.pause();
     }
 
-    // function showHideLightBox() {
-    //     lightBox.classList.toggle('show-lightbox');
-
-    //     if (lbVideo.paused) {
-    //         lbVideo.play();
-    //     } else {
-    //         lbVideo.currentTime = 0;
-    //         lbVideo.pause();
-    //     }
-    //     //rewind the video and make it pause at current time of 0
-
-    // }
-
-    function playVideo() {
+    function playClip() {
         lbVideo.play();
     }
 
-    function pauseVideo() {
+    function pauseClip() {
         lbVideo.pause();
     }
 
-    function restartVideo() {
+    function restartClip() {
         lbVideo.currentTime = 0;
     }
 
-    function muteVideo() {
+    function volumeClip() {
         lbVideo.muted = !lbVideo.muted;
     }
 
@@ -101,10 +88,10 @@
     lbClose.addEventListener('click', hideLightBox);
 
     lbVideo.addEventListener('ended', hideLightBox);
-    playButton.addEventListener('click', playVideo);
-    pauseButton.addEventListener('click', pauseVideo);
-    restartButton.addEventListener('click', restartVideo);
-    volumeButton.addEventListener('click', muteVideo);
+    playButton.addEventListener('click', playClip);
+    pauseButton.addEventListener('click', pauseClip);
+    restartButton.addEventListener('click', restartClip);
+    volumeButton.addEventListener('click', volumeClip);
 
 
 })();
